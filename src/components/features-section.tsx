@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
+    title: "17B параметров",
+    description: "Мощная языковая модель с 17 миллиардами параметров, обученная на современных данных и оптимизированная для реальных задач.",
     icon: "brain",
-    badge: "ИИ",
+    badge: "17B",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
-  },
-  {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Transformer архитектура",
+    description: "Основано на Encoder-Decoder архитектуре transformers — проверенной технологии для обработки языка.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Transformers",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
+    title: "8-bit квантизация",
+    description: "Оптимизированная 8-bit модель для быстрой работы без потери качества. Доступно даже на обычных устройствах.",
+    icon: "globe",
+    badge: "8-bit",
+  },
+  {
+    title: "Telegram Bot",
+    description: "Удобный доступ к ИИ через Telegram. Просто напишите @yappertar_ai_bot и начните общаться с нашей моделью.",
     icon: "link",
-    badge: "Связь",
+    badge: "Bot",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Создано GenAI",
+    description: "Проект группы подростков, которые исследуют ИИ и создают собственные модели. Молодой взгляд на технологии.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "GenAI",
+  },
+  {
+    title: "Открытый доступ",
+    description: "Попробуйте сейчас! Наша модель уже доступна в Telegram. Никаких ожиданий или регистраций.",
+    icon: "lock",
+    badge: "Доступно",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Что умеет YAPPERTAR-ai</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Мощная языковая модель, созданная молодыми исследователями ИИ
           </p>
         </div>
 
