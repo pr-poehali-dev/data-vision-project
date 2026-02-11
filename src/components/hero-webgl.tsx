@@ -120,6 +120,17 @@ export const Hero3DWebGL = () => {
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
   const [subtitleDelay, setSubtitleDelay] = useState(0)
+  const [userCount, setUserCount] = useState(0)
+
+  useEffect(() => {
+    const startDate = new Date('2025-01-01')
+    const now = new Date()
+    const daysPassed = Math.floor((now.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
+    const baseUsers = 30000
+    const dailyGrowth = 300
+    const calculatedUsers = baseUsers + (daysPassed * dailyGrowth)
+    setUserCount(calculatedUsers)
+  }, [])
 
   useEffect(() => {
     setDelays(titleWords.map(() => Math.random() * 0.07))
@@ -171,6 +182,18 @@ export const Hero3DWebGL = () => {
             }}
           >
             {subtitle}
+          </div>
+        </div>
+        <div className="text-sm md:text-lg xl:text-xl mt-4 overflow-hidden">
+          <div
+            className={subtitleVisible ? "fade-in-subtitle" : ""}
+            style={{
+              animationDelay: `${titleWords.length * 0.13 + 0.4 + subtitleDelay}s`,
+              opacity: subtitleVisible ? undefined : 0,
+            }}
+          >
+            <span className="text-red-500 font-bold">{userCount.toLocaleString('ru-RU')}</span>
+            <span className="text-gray-400 ml-2">пользователей уже с нами</span>
           </div>
         </div>
       </div>
